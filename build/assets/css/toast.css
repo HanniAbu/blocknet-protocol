@@ -1,0 +1,36 @@
+#notification {
+	position: fixed;
+	top: -34px;
+	z-index: 100;
+	text-align: center;
+	width: 100vw;
+	padding: 5px;
+}
+#toast {
+	z-index: 1000;
+}
+#toast .success {
+	/*background-color: #00D1B2;*/
+	background-color: #5CB85C;
+	color: #fefefe;
+}
+#toast .fail {
+	background-color: #C24848;
+	color: #fefefe;
+}
+#toast .warn {
+	background-color: #FFDD57;
+	color: #555;
+}
+#toast .info {
+	/*background-color: #3273DC;*/
+	background-color: #3579AE;
+	color: #fff;
+}
+#notification.anim {
+	-webkit-transition: top .6s ease-in-out;
+	-moz-transition: top .6s ease-in-out;
+	-ms-transition: top .6s ease-in-out;
+	-o-transition: top .6s ease-in-out;
+	transition: top .6s ease-in-out;
+}

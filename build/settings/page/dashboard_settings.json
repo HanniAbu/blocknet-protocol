@@ -1,0 +1,9 @@
+{
+	"title": "Blocknet: Dashboard",
+	"description": "Blocknet is a decentralized cross-chain interoperability protocol.",
+	"keywords": "blocknet, crypto, protocol, blockchain, intro, dex, exchange, data, info",
+	"robot": "index,follow",
+	"js": "assets/js/dashboard.js",
+	"js2": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js",
+	"cs": ""
+}

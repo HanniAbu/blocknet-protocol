@@ -1,0 +1,108 @@
+What is Blockchain
+- Why is it needed?
+- How doe sit work?
+- Is it legal?
+- What are the current uses?
+- Is it a legit currency?
+- What can I buy with it?
+- Is it taxed?
+- What is the future of it?
+
+
+How Do I Invest?
+- Fiat gateways(and what is a fiat gateway?)
+- What is a wallet?
+- What's the different between a hot/cold/paper/hardware wallet?
+- How do I access my account?
+- Why are there different platforms?
+- What are the differences of the platforms?
+- How do I know if a project is a scam, fake, or phishing attempt?
+- How to keep secure and minimize risk?
+
+
+
+Dashboard(index)
+	Market Data
+	Coin Specs
+	Social Data
+	Project Info
+
+
+About Blocknet
+	Intro
+	Protocol
+	DEX
+
+
+FAQ
+API
+Docs/How-Tos
+
+
+var block = {
+	"whitepaper": "Coming Soon...",
+	"markets": "<a href='https://bittrex.com/Market/Index?MarketName=BTC-BLOCK'>Bittrex</a>, <a href='https://novaexchange.com/market/BTC_BLOCK/''>Nova Exchange</a>",
+	"blockCount": "",
+	"networkDifficulty": "",
+	"networkHash": "",
+	"serviceNodes": "",
+	"algo": "",
+	"proof": "POW/POS",
+	"releaseMethod": "ITO, No Premine",
+	"startDate":"Oct. 20, 2014",
+	"blockReward": "1 BLOCK",
+	"blockTime": "60 sec.",
+	"24hOpen": "",
+	"24hHigh": "",
+	"24hLow": "",
+	"marketCap": "",
+	"ccFollowers": "",
+	"ccPoints": "",
+	"ccPosts": "",
+	"ccComments": "",
+	"ccViews": "",
+	"twitFollowers": "",
+	"twitFollowing": "",
+	"twitLists": "",
+	"twitTweets": "",
+	"twitStart": "Oct. 2014",
+	"twitHandle": "@The_Blocknet",
+	"twitLink": "https://twitter.com/The_Blocknet",
+	"slackUsers": "1795",
+	"slackInvite": "https://blocknetdx-slack.herokuapp.com/",
+	"telegramUsers": "167",
+	"telegramLink": "https://t.me/Blocknet",
+	"redLink": "https://www.reddit.com/r/theblocknet/",
+	"redHandle": "",
+	"redActiveUsers": "",
+	"redSubs": "",
+	"redStart": "Nov. 2014",
+	"redAMA": "https://www.reddit.com/r/theblocknet/comments/676buj/ask_anything_about_blocknet_qa/",
+	"githubLink": "https://github.com/BlocknetDX",
+	"youtubeLink": "https://www.youtube.com/channel/UCCDBoR9fHb21bLH7FGvFrQg/videos",
+	"rocketLink": "https://webapp.blocknet.co/home",
+	"mediumHandle": "@theblocknetchannel",
+	"mediumLink": "https://medium.com/@theblocknetchannel",
+	"steemHandle": "@theblocknet",
+	"steem": "https://steemit.com/@theblocknet",
+	"explorer": "https://chainz.cryptoid.info/block/",
+	"api": "https://github.com/BlocknetDX/BlockDX/blob/master/doc/dx/dxapi.md",
+	"faq": "https://github.com/BlocknetDX/blocknet-docs/blob/master/blocknetFAQ.md",
+	"walletMigration": "https://github.com/BlocknetDX/blocknet-docs/blob/master/blocknet-migrate-wallet.md",
+	"serviceNodeSetup": "https://github.com/BlocknetDX/blocknet-docs/blob/master/blocknetDXservice-node.md",
+	"cmcPriceUSD": "",
+	"cmcPriceBTC": "",
+	"cmc24hVolUSD": "",
+	"cmcSupply": "",
+	"1hPChange": "",
+	"24hPChange": "",
+	"7dPChange": "",
+};
+
+
+
+
+
+
+
+

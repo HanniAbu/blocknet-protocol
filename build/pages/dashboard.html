@@ -1,0 +1,677 @@
+	    <!-- Page Tabs -->
+	    <div class="nav-content">
+			  <ul class="tabs tabs-transparent">
+	        <li class="tab"><a class="active" href="#market">Market</a></li>
+	        <li class="tab"><a href="#project">Project</a></li>
+	        <li class="tab"><a href="#specs">Specs</a></li>
+	        <li class="tab"><a href="#social">Social</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+  </div>
+  
+
+	<div class="content">
+		<h1 class="center page-title hide">Dashboard</h1>
+		<h2 class="center page-title hide">Market Data</h2>
+	  <div id="market">
+			<div class="row">
+			  <div class="col s12 m10 offset-m1 l10 offset-l1">
+			    <div class="card darken-1">
+			      <div class="card-action">
+
+			      	<!-- <p class="flow-text">Blocknet (BLOCK)</p> -->
+			      	<!-- [BLOCK Price Chart] -->
+		      		<!-- <canvas id="price-chart">[BLOCK Price Chart]</canvas> -->
+
+		      		<div class="row">
+				        <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Price (USD)</td>
+						            <td><span id="priceusd">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Price (BTC)</td>
+						            <td><span id="pricebtc">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>24h Range</td>
+						            <td><span id="range">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>24h Open</td>
+						            <td><span id="open">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>24h Volume<span class="hide-on-med-and-up">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+						            <td><span id="volume">-</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+
+
+			          <div class="col s12 m6">
+				          <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Hour Change</td>
+						            <td><span id="hourchange">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Day Change</td>
+						            <td><span id="daychange">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Week Change</td>
+						            <td><span id="weekchange">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Market Cap</td>
+						            <td><span id="cap">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Supply</td>
+						            <td><span id="supply">-</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+		          </div>
+		      		
+							<div class="row">
+								<br>
+			          <h6 class="a-underline">Resources</h6>
+						      Exchanges: <span id="exchanges">
+						      <a class="a-text a-underline" href='https://bittrex.com/Market/Index?MarketName=BTC-BLOCK' target="_blank" rel="noopener noreferrer">Bittrex</a>, 
+						      <a class="a-text a-underline" href='https://novaexchange.com/market/BTC_BLOCK/' target="_blank" rel="noopener noreferrer">Nova Exchange</a>
+						      </span>
+						  </div>
+
+				      $social
+
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+
+
+
+	  <h2 class="center page-title hide">Project Info</h2>
+	  <div id="project">
+	  	<div class="row">
+			  <div class="col s12 m10 offset-m1 l10 offset-l1">
+			    <div class="card darken-1">
+			      <div class="card-action">
+
+		      		<div class="row">
+				        <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Release Date</td>
+						            <td>Oct. 20, 2014</td>
+						          </tr>
+						          <tr>
+						            <td>Official Website</td>
+						            <td><a class="a-text a-underline" href="https://blocknet.co/" target="_blank" rel="noopener noreferrer">Blocknet.co</a></td>
+						          </tr>
+						          <tr>
+						            <td>Github</td>
+						            <td><a class="a-text a-underline" href="https://github.com/BlocknetDX" target="_blank" rel="noopener noreferrer">BlocknetDX</a></td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+
+			          <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Whitepaper</td>
+						            <td class="grey-text">Coming Soon!</td>
+						          </tr>
+						          <tr>
+						            <td>Governance<span class="hide-on-med-and-up">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+						            <td><a class="a-text a-underline" href="http://blocknetdx.forumotion.com/t4-blocknet-proposals-faq" target="_blank" rel="noopener noreferrer">Decentralized</a></td>
+						          </tr>
+						          <tr>
+						            <td>Financing</td>
+						            <td><a class="a-text a-underline" href="http://blocknetdx.forumotion.com/t4-blocknet-proposals-faq" target="_blank" rel="noopener noreferrer">Self-Funded</a></td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+		          </div>
+
+		          <div class="row">
+				        <div class="col s12 l10 offset-l1">
+					        <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Est. Time Until Voting Period Close</td>
+						            <td><span id="vote-close-date"></span> (Block <span id="vote-close-block"></span>)</td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+			        </div>
+
+
+		          <!-- <p class="flow-text">Github BlockDX Commits</p>
+		      		<canvas id="commit-chart">[Github Commit Graph]</canvas> -->
+
+		          
+							<p class="flow-text">Blocknet Team</p>
+		          <ul class="collection">
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/dan-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/dan-metcalf-b821a812/" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Dan Metcalf</b>(atcsecure)</span>
+						      <p><em>Core Developer & Co-Founder</em><br>
+						        Short Summary
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/arlyn-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/arlynculwick/" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Arlyn Culwick</b> (synechist)</span>
+						      <p><em>Generalist & Co-Founder</em><br>
+										Contributes to all aspects of operation from partnership development to system architecture to community assistance.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/hanni-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/hanni-abu-21731525/" target="_blank" rel="noopener noreferrer">
+								      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+							      </a>
+						      <span class="title"><b>Hanni Abu</b> (hanniabu)</span>
+						      <p><em>Project Coordinator</em><br>
+										Communicates project progress and updates with the community, assists in prioritizing project tasks and synchronizes community-driven efforts, develops a sustainable structure for the project to grow upon, maintains a distributed contributor base and network society culture.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/android-icon-48x48.png" alt="" class="circle">
+						      <span class="title"><b></b>(philipmarshall)</span>
+						      <p><em>Social Media Coordinator</em><br>
+										Maintains Blocknet's social media presence and ensures it's responsive to community needs, liaises with the developer and marketing teams so communications can be transmitted in a clear and timely manner to the community, and contributes to marketing materials and initiatives as part of the larger marketing team.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/alex-sm.png" alt="" class="circle">
+						      <a class="a-text" href="http://www.linkedin.com/in/alexanderhkoch" target="_blank" rel="noopener noreferrer">
+								      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+							      </a>
+						      <span class="title"><b>Alexander Hemdorff Koch</b> (dungor)</span>
+						      <p><em>Strategic Advisor</em><br>
+										Strategic advisor to blocknet since conceptualization. Helped steer the project in the direction it has today. Contributes business modelling and management consulting as well as ideas to the community of the long term potential of the project.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/jeff-sm.png" alt="" class="circle">
+						      <!-- <a class="a-text" href="" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a> -->
+						      <span class="title"><b>Jeff Madgett</b> (86b)</span>
+						      <p><em>User Acceptance Testing</em><br>
+										Researches and configures new assets for Blocknet integration, tests and documents asset compatibility across trading pairs, examines wallet builds for usability/bugs, and fields issues relating to trades, coins, setups, etc from the community.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/android-icon-48x48.png" alt="" class="circle">
+						      <!-- <a class="a-text" href="" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a> -->
+						      <span class="title"><b></b>(aderks)</span>
+						      <p><em>User Acceptance Testing</em><br>
+										Researches and configures new assets for Blocknet integration, tests and documents asset compatibility across trading pairs, examines wallet builds for usability/bugs, and fields issues relating to trades, coins, setups, etc from the community.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/michael-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/mmadgett/" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Michael Madgett</b> (michael)</span>
+						      <p><em>Core Developer</em><br>
+										Supports the core development of the blockchain, including regression testing, network and protocol development and creating DX tools for service node operators.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/android-icon-48x48.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/embryosoft/" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Steve Matyk</b> (sawtoothgeek)</span>
+						      <p><em>Core Developer</em><br>
+										New Feature development and general purpose bug fixing. Works on BlocknetDX new feature development, mainly right now in the areas of the QT based GUI Wallet and xbridge. Specializes in hardcore C/C++ OOP based development with over 20 years of experience in that and other programming languages.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/andrew-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://ru.linkedin.com/in/andrew-rackcheev-18564a57/en" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Andrew Rackcheev</b> (arackcheev)</span>
+						      <p><em>Euro Dev Team</em><br>
+										Project Manager for Euro development team working on the project and vision of XBridge and decentralized exchange from Day 1.
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/android-icon-48x48.png" alt="" class="circle">
+						      <!-- <a class="a-text" href="" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a> -->
+						      <span class="title"><b>????</b> (xenix)</span>
+						      <p><em>Developer</em><br>
+										Summary
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/android-icon-48x48.png" alt="" class="circle">
+						      <!-- <a class="a-text" href="" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a> -->
+						      <span class="title"><b>????</b> (anatoliy)</span>
+						      <p><em>Developer</em><br>
+										Summary
+						      </p>
+						    </li>
+
+						    <li class="collection-item avatar">
+						      <img src="$root/assets/img/team/justice-sm.png" alt="" class="circle">
+						      <a class="a-text" href="https://www.linkedin.com/in/justice-barnett-94b07576/" target="_blank" rel="noopener noreferrer">
+							      <span class="new badge dark-blue" data-badge-caption="LinkedIn"></span>
+						      </a>
+						      <span class="title"><b>Justice Barnett</b> (stormingj)</span>
+						      <p><em>Community Contributor</em><br>
+										Assists in community technical support as well as develops community tools such as the <a class="a-text a-underline" href="http://bit.ly/block-roi" target="_blank" rel="noopener noreferrer">node earnings estimation calculator</a>.
+						      </a>
+						      </p>
+						    </li>
+						  </ul>
+
+
+						  <p class="flow-text inline">Partners:&nbsp;&nbsp;</p><span></span>
+
+
+
+							<div class="row">
+								<br>
+			          <h6 class="a-underline">Resources</h6>
+								<div>
+								  Dan Metcalf Blocknet Interview:
+						      <a class="a-text a-underline" href='https://www.youtube.com/watch?v=bHNR7kbjYzg' target="_blank" rel="noopener noreferrer">Watch on Youtube</a>
+					      </div>
+					      <div>
+						      Arlyn Culwick Blocknet Interview:
+						      <a class="a-text a-underline" href='https://www.youtube.com/watch?v=m3F7aweO_40' target="_blank" rel="noopener noreferrer">Listen on Youtube</a>
+					      </div>
+					      <div>
+						      Blocknet Reddit AMA:
+						      <a class="a-text a-underline" href='https://www.reddit.com/r/theblocknet/comments/676buj/ask_anything_about_blocknet_qa/' target="_blank" rel="noopener noreferrer">Read on Reddit</a>
+					      </div>
+					    </div>
+
+							
+							$social
+
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+
+
+
+	  <h2 class="center page-title hide">Coin Specs</h2>
+	  <div id="specs">
+			<div class="row">
+			  <div class="col s12 m10 offset-m1 l10 offset-l1">
+			    <div class="card darken-1">
+			      <div class="card-action">
+
+		      		<div class="row">
+				        <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Release Date</td>
+						            <td>Oct. 20, 2014</td>
+						          </tr>
+						          <tr>
+						            <td>Release Method<span class="hide-on-med-and-up">&nbsp;&nbsp;&nbsp;</span></td>
+						            <td>ITO, No Premine</td>
+						          </tr>
+						          <tr>
+						            <td>Proof Type</td>
+						            <td>POS</td>
+						          </tr>
+						          <tr>
+						            <td>Algo</td>
+						            <td>Quark</td>
+						          </tr>
+						          <tr>
+						            <td>Block Time</td>
+						            <td>60 sec</td>
+						          </tr>
+						          <tr>
+						            <td>Block Reward</td>
+						            <td>1.0 BLOCK</td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+
+			          <div class="col s12 m6">
+				          <table class="bordered">
+						        <tbody>
+						          <tr>
+						            <td>Circulating Supply</td>
+						            <td><span id="supply2">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Block Height</td>
+						            <td><span id="blockheight">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Network Difficulty</td>
+						            <td><span id="networkdiff">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Network Hash</td>
+						            <td><span id="networkhash">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>Service Nodes</td>
+						            <td><span id="servicenodes">-</span></td>
+						          </tr>
+						          <tr>
+						            <td>BLOCK Staked</td>
+						            <td><span id="blockstaked" class="grey-text">Coming Soon!</span></td>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+		          </div>
+
+		          <div class="row">
+		          	<br>
+			          <h6 class="a-underline">Resources</h6>
+			          <div><a class="a-text" href="https://chainz.cryptoid.info/block/" target="_blank" rel="noopener noreferrer">Explorer</a></div>
+					      <div><a class="a-text" href=""  target="_blank" rel="noopener noreferrer">How To Setup Staking Node</a></div>
+					      <div><a class="a-text" href="https://github.com/BlocknetDX/blocknet-docs/blob/master/blocknetDXservice-node.md"  target="_blank" rel="noopener noreferrer">How To Setup Service Node</a></div>
+			          <br>
+			          For additional help with setting up your wallet or node, <a class="a-text a-underline" href="https://blocknetdx-slack.herokuapp.com/"  target="_blank" rel="noopener noreferrer">join our slack group</a> and visit the <b>#servicenode-setup</b> and <b>#wallet-support</b> channels.
+		          </div>
+
+		          $social
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+		
+
+
+		<h2 class="center page-title hide">Social Data</h2>
+	  <div id="social">
+			<div class="row">
+			  <div class="col s12 m10 offset-m1 l10 offset-l1">
+			    <div class="card darken-1">
+			      <div class="card-action">
+
+		      		<div class="row">
+				        <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						        	<tr class="gap">
+						            <td><a class="a-text" href="https://blocknetdx-slack.herokuapp.com/"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-slack-icon" role="img" class="table-svg" viewBox="0 0 24 24"><title>Blocknet Slack Icon</title><path fill="#E01A59" d="M9.879 10.995l1.035 3.085 3.205-1.074-1.035-3.074-3.205 1.08v-.017z"/>
+						            <path fill="#E01A59" d="M18.824 14.055l-1.555.521.54 1.61c.218.65-.135 1.355-.786 1.574-.15.045-.285.067-.435.063-.511-.015-.976-.338-1.155-.849l-.54-1.607-3.21 1.073.539 1.608c.211.652-.135 1.358-.794 1.575-.15.048-.285.067-.435.064-.51-.015-.976-.34-1.156-.85l-.539-1.619-1.561.524c-.15.045-.285.061-.435.061-.511-.016-.976-.345-1.155-.855-.225-.66.135-1.364.78-1.575l1.56-.525L7.5 11.76l-1.551.525c-.141.048-.285.066-.428.064-.495-.016-.975-.338-1.141-.848-.209-.65.135-1.354.796-1.574l1.56-.52-.54-1.605c-.21-.654.136-1.359.796-1.575.659-.22 1.363.136 1.574.783l.539 1.608L12.3 7.544l-.54-1.605c-.209-.645.135-1.35.789-1.574.652-.211 1.359.135 1.575.791l.54 1.621 1.555-.51c.651-.219 1.356.135 1.575.779.218.654-.135 1.359-.784 1.575l-1.557.524 1.035 3.086 1.551-.516c.652-.211 1.358.135 1.575.795.22.66-.135 1.365-.779 1.574l-.011-.029zm4.171-5.356C20.52.456 16.946-1.471 8.699 1.005.456 3.479-1.471 7.051 1.005 15.301c2.475 8.245 6.046 10.17 14.296 7.694 8.245-2.475 10.17-6.046 7.694-14.296z"/></svg></span><b>Slack</b></a><span class="grey-text"> (Phasing Out)</span></td>
+						          </tr>
+						            <td></td>
+						          <tr>
+						            <td>Creation Date</td>
+						            <td>Dec. 2, 2014</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://blocknetdx-slack.herokuapp.com/"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Members</td>
+						            <td>1800</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://twitter.com/The_Blocknet"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-twitter-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Twitter Icon</title><path fill="#1DA1F2" d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span><b>Twitter</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Creation Date</td>
+						            <td>Oct. 24, 2014</td>
+						          </tr>
+						          <tr>
+						            <td>Handle</td>
+						            <td>@The_Blocknet</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://twitter.com/The_Blocknet"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Followers</td>
+						            <td id="twitfollowers">-</td>
+						          </tr>
+						          <tr>
+						            <td>Tweets</td>
+						            <td id="twittweets">-</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://www.reddit.com/r/theblocknet/"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-reddit-icon" role="img" class="table-svg" viewBox="0 0 480 480"><title>Blocknet Reddit Icon</title>
+												<path fill="#FF5700" d="M480.5,251c0-27.7-22.2-50.2-49.5-50.2c-13,0-24.7,5-33.6,13.3c-32.4-22.8-76.1-37.8-124.9-40.6l21.9-73.2l67.1,13.5  c2.3,22.7,21.2,40.4,44.3,40.4c0.1,0,0.1,0,0.2,0c0.1,0,0.1,0,0.2,0c24.6,0,44.5-20.2,44.5-45.1S430.7,64,406.1,64  c-0.1,0-0.1,0-0.2,0c0,0-0.1,0-0.1,0c-17.2,0-32,9.8-39.5,24.3l-89.7-18l-30.8,103l-2.5,0.1c-50.3,2.2-95.5,17.4-128.7,40.7  c-8.8-8.3-20.6-13.3-33.6-13.3c-27.3,0-49.5,22.5-49.5,50.2c0,19.6,11,36.5,27.1,44.8c-0.8,4.9-1.2,9.8-1.2,14.8  C57.5,386.4,146.4,448,256,448s198.5-61.6,198.5-137.5c0-5-0.4-9.9-1.1-14.8C469.5,287.4,480.5,270.5,480.5,251z M65.8,271.1  c-6.6-4.5-10.9-12.1-10.9-20.8c0-13.8,11.1-25.1,24.7-25.1c5.6,0,10.8,1.9,15,5.1C81.1,242.2,71.1,256,65.8,271.1z M389.3,109.1  c0-9.2,7.4-16.8,16.5-16.8s16.5,7.5,16.5,16.8c0,9.2-7.4,16.8-16.5,16.8S389.3,118.4,389.3,109.1z M158.5,288.4  c0-17.6,14.2-31.8,31.8-31.8s31.8,14.2,31.8,31.8c0,17.6-14.2,31.8-31.8,31.8S158.5,306,158.5,288.4z M256,400  c-47.6-0.2-76-28.5-77.2-29.7l12.6-12.4c0.2,0.2,23.7,24.2,64.6,24.4c40.3-0.2,64.2-24.2,64.5-24.4l12.6,12.4  C331.9,371.5,303.6,399.8,256,400z M322.3,320.2c-17.6,0-31.8-14.2-31.8-31.8c0-17.6,14.2-31.8,31.8-31.8s31.8,14.2,31.8,31.8  C354.1,306,339.8,320.2,322.3,320.2z M446.4,271.5c-5.4-15.3-15.6-29.4-29.3-41.4c4.2-3.3,9.5-5.2,15.2-5.2  c13.9,0,25.1,11.4,25.1,25.5C457.5,259.2,453.1,266.9,446.4,271.5z"/></svg></span><b>Reddit</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Subreddit</td>
+						            <td>/r/theblocknet</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://www.reddit.com/r/theblocknet/"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Subscribers</td>
+						            <td id="redditsubs">-</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://bitcointalk.org/index.php?topic=829576.0" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-bitcointalk-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Bitcointalk Icon</title><path fill="#F7931A" d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"/></svg></span><b>Bitcointalk</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Creation Date<span class="hide-on-med-and-up">&nbsp;&nbsp;</span></td>
+						            <td>Oct. 20, 2014</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://bitcointalk.org/index.php?topic=829576.0" target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Posts</td>
+						            <td>8,311</td>
+						          </tr>
+						          <tr>
+						            <td>Reads</td>
+						            <td>975,024</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://en-gb.facebook.com/theblocknet/"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-facebook-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Facebook Icon</title><path fill="#3B5998" d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></span><b>Facebook</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://en-gb.facebook.com/theblocknet/"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Followers</td>
+						            <td>1285</td>
+						          </tr>
+
+						        </tbody>
+						      </table>
+			          </div>
+
+
+			          
+			          <div class="col s12 m6">
+					        <table class="bordered">
+						        <tbody>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://t.me/Blocknet"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-telegram-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Telegram Icon</title><path fill="#179CDE" d="M9.028 20.837c-.714 0-.593-.271-.839-.949l-2.103-6.92L22.263 3.37"/><path fill="#179CDE" d="M9.028 20.837c.552 0 .795-.252 1.105-.553l2.941-2.857-3.671-2.214"/><path fill="#179CDE" d="M9.403 15.213l8.89 6.568c1.015.56 1.748.271 2-.942l3.62-17.053c.372-1.487-.564-2.159-1.534-1.72L1.125 10.263c-1.45.582-1.443 1.392-.264 1.753l5.455 1.7L18.94 5.753c.595-.36 1.143-.167.694.232"/></svg></span><b>Telegram</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://t.me/Blocknet"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Users</td>
+						            <td>174</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://medium.com/@theblocknetchannel"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-medium-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Medium Icon</title><path d="M7.255 2.292l5.617 12.257h.177c.898-2.015 1.67-4.083 2.506-6.129s1.67-4.071 2.453-6.118h5.909a3.831 3.831 0 0 1-.25.366c-.439.49-.867 1.044-1.337 1.472a1.68 1.68 0 0 0-.501 1.284v13.572a1.128 1.128 0 0 0 .397.898c.46.407.898.835 1.336 1.263l.428.439h-9.156a2.934 2.934 0 0 1 .272-.345c.428-.407.856-.825 1.305-1.211a1.274 1.274 0 0 0 .459-1.044V9.245c0-.46 0-.919.073-1.368v-.751h-.136c-.083.167-.188.323-.25.5L11.024 21.2c-.073.188-.167.365-.261.543h-.126L3.893 6.98h-.146v9.667a2.015 2.015 0 0 0 .449 1.315c.804 1.044 1.587 2.088 2.38 3.132.105.136.188.282.334.48H0c.104-.177.177-.302.261-.407.825-1.096 1.66-2.202 2.495-3.288a1.89 1.89 0 0 0 .418-1.222V6.217a1.576 1.576 0 0 0-.345-1.044C2.16 4.38 1.565 3.523.876 2.636c-.073-.104-.136-.219-.24-.375z"/></svg></span><b>Medium</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Creation Date</td>
+						            <td>Jul. 2017</td>
+						          </tr>
+						          <tr>
+						            <td>Handle</td>
+						            <td>@theblocknetchannel</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://medium.com/@theblocknetchannel"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Followers</td>
+						            <td>53</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://steemit.com/@theblocknet"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-steem-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Steem Icon</title><path fill="#1A5099" d="M3.927 2.596c.264.045-.397 1.778-.028 3.76.318 1.697 4.313 8.275 4.148 10.529-.128 1.418-3.408 4.74-3.753 4.52-.377-.105.996-2.361.486-4.244C4.19 14.97.673 9.301.677 6.798c0-1.832 3.011-4.32 3.25-4.202zM11.44.005c.336.058-.506 2.271-.034 4.791.405 2.17 5.501 10.555 5.292 13.432-.166 1.809-4.348 6.043-4.789 5.76-.479-.131 1.271-3.008.622-5.406-.755-2.796-5.238-10.026-5.235-13.218 0-2.338 3.842-5.509 4.144-5.359zm7.754 2.591c.27.045-.393 1.778-.023 3.761.318 1.697 4.313 8.275 4.148 10.529-.125 1.418-3.408 4.74-3.754 4.52-.377-.105.996-2.361.488-4.244-.594-2.192-4.11-7.861-4.105-10.363 0-1.832 3.014-4.32 3.248-4.202h-.002z"/></svg></span><b>Steem</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Creation Date</td>
+						            <td>Aug. 2017</td>
+						          </tr>
+						          <tr>
+						            <td>Handle</td>
+						            <td>@theblocknet</td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://steemit.com/@theblocknet"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Followers</td>
+						            <td>34</td>
+						          </tr>
+						          <tr class="gap">
+						            <td><a class="a-text" href="https://www.cryptocompare.com/coins/block/overview"  target="_blank" rel="noopener noreferrer"><i class="material-icons table-i">multiline_chart</i><b>CryptoCompare</b></a></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td>Link</td>
+						            <td><a class="a-text a-underline" href="https://www.cryptocompare.com/coins/block/overview"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td>Followers</td>
+						            <td id="ccfollowers">-</td>
+						          </tr>
+						          <tr>
+						            <td>Views</td>
+						            <td id="ccviews">-</td>
+						          </tr>
+						          <tr class="gap">
+						          	<td><b>Other</b></td>
+						            <td></td>
+						          </tr>
+						          <tr>
+						            <td><a class="a-text" href="https://www.youtube.com/channel/UCCDBoR9fHb21bLH7FGvFrQg/videos"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-youtube-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Youtube Icon</title><path fill="#E62117" d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></span>Youtube</a></td>
+						            <td><a class="a-text a-underline" href="https://www.youtube.com/channel/UCCDBoR9fHb21bLH7FGvFrQg/videos"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td><a class="a-text" href="https://github.com/BlocknetDX"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-github-icon" class="table-svg" role="img" viewBox="0 0 24 24"><title>Blocknet Github Icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>Github</a></td>
+						            <td><a class="a-text a-underline" href="https://github.com/BlocknetDX"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						          </tr>
+						          <tr>
+						            <td><a class="a-text" href="https://rocket.blocknet.co:8443/"  target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="blocknet-rocketchat-icon" class="table-svg" role="img" viewBox="0 0 256 219"><title>Blocknet Rocket Chat Icon</title><path d="M255.95 109.307c0-12.853-3.844-25.173-11.43-36.63-6.81-10.283-16.351-19.385-28.355-27.057-23.18-14.806-53.647-22.963-85.782-22.963-10.734 0-21.315.907-31.577 2.705-6.366-5.96-13.82-11.322-21.707-15.56C34.964-10.62.022 9.322.022 9.322s32.487 26.688 27.204 50.08C12.693 73.821 4.814 91.207 4.814 109.307c0 .056.003.115.003.173 0 .057-.003.113-.003.174 0 18.1 7.876 35.486 22.412 49.902C32.509 182.95.022 209.639.022 209.639s34.942 19.939 77.077-.48c7.886-4.238 15.338-9.603 21.707-15.56 10.264 1.796 20.843 2.702 31.577 2.702 32.137 0 62.601-8.151 85.782-22.958 12.004-7.671 21.545-16.77 28.356-27.058 7.585-11.455 11.43-23.781 11.43-36.628 0-.06-.003-.115-.003-.174l.002-.176z" fill="#C1272D"/><path d="M130.383 40.828c59.505 0 107.746 30.814 107.746 68.824 0 38.007-48.241 68.823-107.746 68.823-13.25 0-25.94-1.532-37.662-4.325-11.915 14.332-38.125 34.26-63.587 27.82 8.282-8.895 20.552-23.926 17.926-48.686-15.262-11.873-24.422-27.07-24.422-43.632-.003-38.013 48.238-68.824 107.745-68.824" fill="#FFF"/><path d="M130.383 126.18c7.906 0 14.314-6.408 14.314-14.314 0-7.905-6.408-14.313-14.314-14.313-7.905 0-14.313 6.408-14.313 14.313 0 7.906 6.408 14.314 14.313 14.314zm49.764 0c7.905 0 14.314-6.408 14.314-14.314 0-7.905-6.409-14.313-14.314-14.313s-14.313 6.408-14.313 14.313c0 7.906 6.408 14.314 14.313 14.314zm-99.53-.003c7.904 0 14.311-6.407 14.311-14.31 0-7.904-6.407-14.312-14.31-14.312-7.905 0-14.312 6.408-14.312 14.311 0 7.904 6.407 14.311 14.311 14.311z" fill="#C1272D"/><path d="M130.383 169.42c-13.25 0-25.94-1.33-37.662-3.75-10.52 10.969-32.188 25.714-54.643 25.172-2.959 4.484-6.175 8.15-8.944 11.126 25.462 6.44 51.672-13.486 63.587-27.82 11.723 2.795 24.414 4.325 37.662 4.325 59.027 0 106.962-30.326 107.726-67.915-.764 32.582-48.699 58.861-107.726 58.861z" fill="#CCC"/></svg></span>Rocket Chat</a></td>
+						            <td><a class="a-text a-underline" href="https://webapp.blocknet.co/channel/general"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						            <div>
+					      
+						          </tr>
+						          <tr>
+						            <td><a class="a-text" href="https://blocknetdx.forumotion.com/"  target="_blank" rel="noopener noreferrer"><span><img src="https://illiweb.com/fa/modernbb/logo-simple.png" alt="Blocknet Forum Icon" style="width:24px;height:20px;"></span>&nbsp;Forum</a></td>
+						            <td><a class="a-text a-underline" href="https://blocknetdx.forumotion.com/"  target="_blank" rel="noopener noreferrer">Visit Link</a></td>
+						            <div>
+						          </tr>
+						        </tbody>
+						      </table>
+			          </div>
+		          </div>
+
+		          <div class="row">
+		          	<div class="col s12 m10 offset-m1 l8 offset-l2">
+									<a class="twitter-timeline a-text" data-height="600" data-chrome="nofooter" data-link-color="#101341" data-border-color="#a80000" href="https://twitter.com/The_Blocknet">Tweets by @The_Blocknet</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								</div>
+
+								<!-- <div class="col s12 m10 offset-m1 l6">
+									<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1173_RC01/embed_loader.js"></script>
+									<script type="text/javascript"> 
+										trends.embed.renderExploreWidget("TIMESERIES", {
+											"comparisonItem":[{
+												"keyword":"blocknet",
+												"geo":"",
+												"time":"today 12-m"}],
+											"category":0,
+											"property":""},
+											{"exploreQuery":"q=blocknet&hl=en-US&date=today 12-m",
+											"guestPath":"https://trends.google.com:443/trends/embed/"});
+									</script> 
+								</div> -->
+							</div>
+
+							
+							$social
+
+
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+		<br>

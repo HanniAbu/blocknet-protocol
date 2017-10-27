@@ -1,0 +1,414 @@
+/*
+Theme
+Primary: 3A526D
+Primary-Dark: 101341
+Primary Darker: #243 447  older -> 101341;
+Secondary Color: 26A69A		older -> 00D1B2
+Grey: F4F4F4
+
+Logo grey: 8F8886
+Logo blue: 101341
+
+*/
+
+/*====================
+				GENERAL
+======================*/
+html {
+	/*font-family: 'Roboto', sans-serif;*/
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+[type="radio"].with-gap:checked + label:before {
+border: 2px solid #101341; 
+}
+[type="radio"].with-gap:checked + label:after {
+border: 2px solid #101341;
+background-color: #101341;
+}
+[type="radio"].with-gap:checked + label {
+color: #333;
+}
+.input-field input:focus + label,
+input:focus + label,
+.input-field textarea:focus + label,
+ul.dropdown-content.select-dropdown li span {
+	color: #101341 !important;
+}
+.input-field input:focus,
+input:focus,
+.input-field textarea:focus {
+	border-bottom: 1px solid #101341 !important;
+	box-shadow: 0 1px 0 0 #101341 !important;
+}
+img {
+	width: 350px;
+	max-width: 70vw;
+}
+ul.browser-default li {
+	list-style-type: initial;
+}
+hr {
+	border: 1px solid #e0e0e0;
+
+}
+.card a {
+	color: #555 !important;
+}
+.card a:visited {
+	color: #8F8886 !important;
+}
+.bold {
+	font-weight: bold;
+}
+.justify {
+	text-align: justify;
+}
+.center {
+	text-align: center !important;
+}
+.a-text {
+	text-transform: none !important;
+	margin: 0 !important;
+}
+.a-underline {
+	text-decoration: underline;
+}
+td:nth-child(2) {
+    /*text-align: right !important;*/
+}
+.underline {
+	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 2px solid #101341;
+	width: 130px;
+}
+.turq-text {
+	color: #101341 !important;
+}
+.turq-bg {
+	background-color: #101341 !important;
+}
+.no-margin {
+	margin: 0;
+}
+.collapsible-body {
+	word-wrap: break-word !important;
+}
+.inline {
+	display: inline-block;
+}
+.block {
+	display: block;
+}
+.page-title {
+	max-width: 100%;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-size: 45px;
+}
+@media (max-width: 600px) { 
+	.page-title {
+		margin: 0;
+		font-size: 35px;
+		text-align: center;
+	}
+}
+@media (max-width: 320px) { 
+	.page-title {
+		margin: 0;
+		font-size: 35px;
+	}
+}
+.card {
+	margin-top: 30px;
+	color: #333;
+	border-top: 5px solid #101341 !important;
+	border-bottom: 2px solid #101341 !important;
+	padding-bottom: 8px;
+}
+.content {
+	margin-top: -10px;
+	flex: 1 0 auto;
+}
+@media (max-width: 992px) { 
+	.content {
+		padding-top: 50px;
+	}
+}
+.waves-dark:active {
+	background-color: #8D9196 !important;
+	color: #fff;
+}
+.dark-blue {
+	background-color: #101341 !important;
+}
+
+
+/*====================
+			BRANDING
+======================*/
+.logo {
+	width: 50%;
+}
+.custom-logo {
+	margin-left: 34%;
+	margin-top: 10px;
+}
+.brand-name {
+	margin-left: 23%;
+	margin-top: -25px;
+	margin-bottom: 25px;
+}
+.sponsor {
+	font-size: 9px !important;
+	margin-left: 12%;
+	margin-top: -45px;
+	margin-bottom: -10px;
+}
+.sponsor .unofficial {
+	font-size: 12px !important;
+	color: #999 !important;
+	margin-left: 29%;
+	margin-bottom: -30px;
+}
+.sponsor a {
+	font-size: 12px !important;
+	color: #999 !important;
+}
+.brand-name a:hover, .brand-name a:focus,
+.sponsor a:hover, .sponsor a:focus,
+.logo:hover, .logo:focus {
+	background-color: #fff !important;
+}
+.hover-wiggle:hover, .hover-wiggle:focus {
+	margin-left: 0px;
+	margin-bottom: 7px;
+}
+
+
+
+/*====================
+				NAV
+======================*/
+nav {
+	background-color: #101341;
+}
+@media (min-width: 992px) { 
+	nav {
+		background-color: #101341;
+	}
+}
+.nav-content .tabs {
+	background-color: #101341;
+}
+@media (min-width: 992px) { 
+	header, .content, .nav-wrapper, .nav-content, footer {
+    padding-left: 300px;
+  }
+}
+@media (min-width: 992px) { 
+	.nav-content {
+    padding-left: calc((100vw - 300px)*.1666 + 300px);
+  }
+}
+.modal {
+	border-top: solid #101341 2px;
+}
+@media (min-width: 992px) { 
+	.nav-extended {
+		border-top: solid #101341 2px;
+	}
+}
+
+#sidenav-overlay {
+z-index: 996;
+}
+
+
+
+
+/*====================
+				TABLES
+======================*/
+.card-table {
+	overflow-x: scroll; 
+}
+.card-table .card-action {
+	padding-top: 10px;
+}
+.card-table th {
+	border-bottom: 2px solid #d0d0d0;
+	padding-bottom: 10px;
+}
+.card-table tbody tr {
+	border-bottom: 1px solid #ddd; 
+}
+.card-table .dataTables_filter i {
+	margin-top: 10px;
+}
+.card-table .dataTables_filter label {
+	position: relative;
+}
+
+
+
+
+
+/*====================
+				ALERTS
+======================*/
+#provider-modal {
+	height: 100%;
+}
+#provider-help {
+	line-height: 15px;
+	padding-bottom: -15px !important;
+	font-size: 21px !important;
+}
+
+
+
+/*====================
+				ASSETS
+======================*/
+
+
+
+
+/*====================
+				API
+======================*/
+.code {
+	background-color: #eee;
+	padding: 10px;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+
+
+/*====================
+				DONATE
+======================*/
+.qr {
+	width: 235px;
+	max-width: 80vw;
+}
+.key {
+	word-wrap: break-word;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+
+
+/*====================
+				CHANGELOG
+======================*/
+.changelog p {
+	width: 100px !important;
+}
+
+
+/*====================
+					404
+======================*/
+#p404 .card-action .row {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+
+
+/*====================
+			SUBSCRIBE
+======================*/
+.subscribe label {
+	color: #000;
+}
+
+
+/*====================
+				FOOTER
+======================*/
+.footer-copyright {
+	background-color: #101341 !important;
+}
+footer {
+	background-color: #101341 !important;
+}
+.footer-copyright {
+	font-size: .8em;
+	color: #aaa !important;
+	margin-top: -20px;
+}
+#follow-us svg {
+	margin-bottom: -5px !important;
+}
+#follow-us li {
+	margin-top: 12px !important;
+}
+.toolbar ul {
+	background-color: #101341;
+}
+@media (max-width: 600px) { 
+	.toolbar ul li a {
+		line-height: 20px !important;
+		margin-top: 10px;
+	}
+}
+
+
+
+canvas {
+	margin-top: -40px;
+	/*margin-left: 5%;*/
+	width: 100% !important;
+	height: auto !important;
+}
+.collection-item a .badge {
+	float: left;
+	margin-left: -65px;
+	margin-top: 50px;
+}
+.table-svg {
+	line-height: 20px;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	margin-bottom: -6px;
+}
+.table-i {
+	line-height: 20px;
+	margin-right: 5px;
+	color: #49D87C;
+}
+td .a-text, td .a-text:visited {
+	color: inherit !important;
+}
+.social-link-group {
+	text-align: center !important;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.email-caption {
+	color: #bbb;
+	font-size: .8em;
+	margin-top: -22px;
+}
+#social table {
+	margin-top: -15px;
+}
+#social td {
+	padding-bottom: 5px !important;
+	padding-top: 5px !important;
+}
+#social .gap td  {
+	padding-top: 35px !important;
+	padding-bottom: 10px !important;
+	border-bottom: 1px solid #bbb;
+}
